@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+</head>
+<body>
+    <section class="payment">
+        <div class="payment-details">
+            <label for="method">Payment method</label>
+            <select id="method" name="payment-method">
+                <option value="Credit card">Credit card</option>
+                <option value="EFT">EFT</option>
+                <option value="Pay-at-atm">ATM deposit</option>
+                <option value="pay-at-collection">Pay at collection</option>
+            </select>
+            <p>Reference : 22johnsmith231527</p>
+            <p>Transaction date</p>
+            <p>Amount : </p>
+        </div>
+        <div class="form">
+            <form action="action_page.php">
+        
+                <label for="cholder">Card holder</label>
+                <input type="text" id="cholder" name="cholder" placeholder="Your name..">
+    
+                <label for="cnumber">Card Number</label>
+                <input type="number" id="cnumber" name="cnumber" placeholder="Your card number..">
+                
+                <label for="expiry">Expiry</label>
+                <input type="number" id="expiry" name="expiry" placeholder="Month..">
+                <input type="number" id="expiry" name="expiry" placeholder="Year..">
+                
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" placeholder="Last 3-digits on your card..">
+                
+                <input type="checkbox" id="t&c" name="t&c" value="Transaction">
+                <label for="t&c"> I've read and accept the Terms and conditions</label><br>
+
+                <input type="submit" value="Pay">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
