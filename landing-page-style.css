@@ -34,13 +34,17 @@
     }
   }
   /************************************************************************************/
+ 
+  .flex-container{
+    display: flex;
+  }
   
 .car img{
   height: 335px;
   width: 55%;
-  left: 160px;
+  left: 1px;
   top: 1px;
-  display: block;
+  display: inline-flex;
   margin-left: auto;
   margin-right: auto;
 }  
